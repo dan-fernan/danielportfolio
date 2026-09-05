@@ -4,9 +4,9 @@ import { PROJECTS } from "@/lib/projects";
 export default function ProjectsPage() {
   return (
     <div className="max-w-3xl px-4 py-6">
-      <p className="mb-4 text-xs text-comment">{"// projects/ — expand a file for details"}</p>
+      <p className="mb-4 text-xs text-comment">{"// projects/ — what I've built and why"}</p>
       {PROJECTS.map((project) => (
-        <ProjectCard key={project.id} project={project} />
+        <ProjectCard key={project.id} project={project} defaultExpanded />
       ))}
     </div>
   );

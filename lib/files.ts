@@ -16,8 +16,8 @@ export const ROOT_FILES: FileEntry[] = [
 
 export const PROJECT_FILES: FileEntry[] = [
     { id: "codejam", label: "codejam.tsx", path: "/projects/codejam", icon: FileCode2, color: "var(--color-blue)"},
-    { id: "codeburrow", label: "codeburrow.py", path: "/projects/codeburrow", icon: FileCode2, color: "var(--color-blue)"},
     { id: "maps", label: "maps.tsx", path: "/projects/maps", icon: FileCode2, color: "var(--color-blue)"},
+    { id: "codeburrow", label: "codeburrow.py", path: "/projects/codeburrow", icon: FileCode2, color: "var(--color-blue)"},
 ]
 
 export const RESUME_FILE: FileEntry = {

@@ -8,7 +8,7 @@ const WELCOME = ["daniel@portfolio ~ % welcome", "Type 'help' to see available c
 
 export default function Terminal() {
   const router = useRouter();
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const [lines, setLines] = useState<string[]>(WELCOME);
   const [input, setInput] = useState("");
   const endRef = useRef<HTMLDivElement>(null);
@@ -49,7 +49,7 @@ export default function Terminal() {
       router.push("/contact");
       echo(["Opening contact.tsx ..."]);
     } else if (lower === "whoami") {
-      echo(["daniel — CS junior @ Queens College, CUNY. Full-stack developer building real-time systems and dev tools."]);
+      echo(["daniel — CS junior @ Queens College, CUNY. Building full-stack products and real-time systems."]);
     } else if (lower === "clear") {
       setLines([]);
       setInput("");

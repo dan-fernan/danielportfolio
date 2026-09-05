@@ -17,7 +17,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Daniel Fernandez - Portfolio",
-  description: "CS junior building real-time systems and dev tooling.",
+  description: "CS junior building full-stack products and real-time systems.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

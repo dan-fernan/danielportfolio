@@ -34,7 +34,7 @@ export default function ProjectCard({
           href={project.github}
           target="_blank"
           rel="noreferrer"
-          className="flex shrink-0 items-center gap-1 text-xs text-muted hover:text-primary"
+          className="flex shrink-0 items-center gap-1 text-xs text-fn hover:underline"
         >
           <Code2 size={13} /> github
         </a>
@@ -44,6 +44,10 @@ export default function ProjectCard({
         <div className="bg-editor px-3.5 py-4">
           <p className="mb-3 font-sans text-[13.5px] leading-relaxed text-primary">
             {project.description}
+          </p>
+          <p className="mb-3 font-sans text-[13px] leading-relaxed text-muted">
+            <span className="font-semibold text-heading">Why I built it: </span>
+            {project.why}
           </p>
           <div className="mb-3">
             {project.stack.map((tech) => (

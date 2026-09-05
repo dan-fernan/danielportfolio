@@ -43,9 +43,9 @@ export default function ExperiencePage() {
       <p className="mb-5 text-xs text-comment">{"// experience.md — background & work history"}</p>
 
       <p className="mb-6 font-sans text-[14px] leading-relaxed text-primary">
-        Full-stack developer and CS junior at Queens College, CUNY — building real-time
-        systems and dev tooling, most recently as an intern on the Wall Street Journal
-        Web Brand team.
+        Full-stack developer and CS junior at Queens College, CUNY — building
+        full-stack products and real-time systems, most recently as an intern on the
+        Wall Street Journal Web Brand team.
       </p>
 
       <div className="mb-6 border-l-2 border-border-light pl-3.5">
