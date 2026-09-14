@@ -34,11 +34,11 @@ export const PROJECTS: Project[] = [
       "A full-stack academic planning platform built to scale for roughly 2,000 Queens College CS undergraduates, centralizing course mapping, professor ratings, and schedule creation around live CUNY course data.",
     why:
       "I got tired of bouncing between three different sources to plan a semester: CUNYfirst for building a schedule, RateMyProfessors for professor ratings, and the Queens College CS site for a course map. MAPS combines all three into one platform, built as a personal project with a small team.",
-    stack: ["React", "Node.js", "PostgreSQL", "Firebase", "D3.js"],
+    stack: ["React", "Node.js", "Express", "PostgreSQL", "Firebase", "Puppeteer", "D3.js"],
     points: [
-      "Live course data scraped directly from CUNY Global Search powers a custom professor rating system and a Course Picker that ranks professors highest to lowest.",
+      "Live course data, scraped via a Puppeteer-based pipeline against CUNY Global Search, powers a custom professor rating system and a Course Picker that ranks professors highest to lowest.",
       "Schedule Builder with automatic conflict checks, plus a D3-driven major progress map visualizing prerequisites and completed courses.",
-      "Firebase Authentication secures user-scoped login across a custom pixel-art UI; led backend architecture and auth on a 4-person team.",
+      "Firebase Authentication secures user-scoped login across a custom pixel-art UI; led development across the 4-person team, from data modeling to deployment.",
     ],
     github: "https://github.com/Wilson1009/MAPS",
   },

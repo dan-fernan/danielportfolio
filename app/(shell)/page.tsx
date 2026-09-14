@@ -59,8 +59,8 @@ export default function HomePage() {
 
       <div className="max-w-xl py-4">
         <p className="mb-4 font-sans text-[13px] text-muted">
-          Prev SWE Intern @ Dow Jones · Computer Science Junior @ Queens College · CUNY
-          Tech Prep Fellow · Full-Stack Developer
+          SWE Intern @ Crcle · Prev SWE Intern @ Dow Jones · Computer Science Junior @
+          Queens College · Full-Stack Developer
         </p>
         <p className="font-sans text-[15px] leading-relaxed text-primary">
           I&apos;m a junior studying Computer Science at Queens College, CUNY.
@@ -74,8 +74,9 @@ export default function HomePage() {
         <div className="mt-4 rounded border-l-2 border-fn/60 bg-tabs/40 py-2 pl-3.5">
           <p className="font-sans text-[13px] leading-relaxed text-primary">
             <span className="font-semibold text-heading">Most recently:</span>{" "}
-            Software Engineer Intern on the Wall Street Journal Web Brand team at
-            Dow Jones, shipping production code read by millions. More in{" "}
+            Software Engineer Intern at Crcle, an AI startup — following a prior
+            internship on the Wall Street Journal Web Brand team at Dow Jones,
+            shipping production code read by millions. More in{" "}
             <Link href="/experience" className="text-fn hover:underline">
               experience.md
             </Link>

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const EDUCATION = {
   title: "Queens College, CUNY",
   meta: "B.S. Computer Science · expected Dec 2027",
@@ -7,13 +9,20 @@ const EDUCATION = {
 
 const EXPERIENCE = [
   {
+    company: "Crcle",
+    role: "Software Engineer Intern",
+    meta: "Sep 2026 – Present · Remote",
+    points: [],
+  },
+  {
     company: "Dow Jones & Company",
     role: "Software Engineer Intern — Wall Street Journal Web Brand",
     meta: "Jun 2026 – Aug 2026 · New York, NY",
     points: [
-      "Lead a cross-functional intern team building an AI-powered testing harness, packaged as a Claude Skill, that maps cross-repo code dependencies and auto-generates self-healing Playwright e2e tests informed by Jira context.",
-      "Merged production code to dynamically swap news buckets on the WSJ homepage, improving content delivery for millions of users.",
-      "Patched a structural rendering issue within a shared component library, resolving a bug that injected duplicate HTML tags and ensuring correct semantic and SEO baseline compliance across multiple consuming products.",
+      "Led a cross-functional intern team to build an AI-powered testing harness — packaged as a Claude Skill — that maps cross-repo code dependencies and auto-generates Jest unit tests and Playwright e2e tests informed by Jira context.",
+      "Patched a structural rendering issue within a shared component library, resolving a bug that injected duplicate HTML tags and ensuring correct semantic and SEO baseline compliance across 3 site sections.",
+      "Root-caused a rendering bug in a WSJ content module, tracing missing props in Next.js SSR data-fetching to broken visual output and broken hyperlink behavior, and documented findings for senior engineering handoff.",
+      "Merged production code to dynamically swap news buckets on the WSJ homepage, improving content delivery for 4.1M+ subscribers.",
     ],
   },
   {
@@ -21,9 +30,17 @@ const EXPERIENCE = [
     role: "Software Engineer Fellow — Web Dev Track",
     meta: "Jul 2025 – Jun 2026 · New York, NY",
     points: [
-      "Developed an educational web app with React, Next.js, and Node.js tailored to boost college student productivity.",
-      "Leveraged 15+ REST API endpoints to fetch and manage data for user-facing features.",
-      "Worked in agile team workflows using Git/GitHub, code reviews, Scrum routines, and CI/CD practices.",
+      <>
+        Designed the relational data model and Figma wireframes for{" "}
+        <Link href="/projects/maps" className="text-fn hover:underline">
+          M.A.P.S.
+        </Link>
+        , a full-stack academic planning platform (React, Node.js, Express,
+        PostgreSQL) built to scale for 2,000+ Queens College undergraduates,
+        centralizing course mapping, professor metrics, and schedule creation.
+      </>,
+      "Built a Puppeteer-based scraping pipeline to source real-time course data and implemented 10+ REST API endpoints — including database transactions and fallback logic — alongside Firebase Authentication and core React frontend pages.",
+      "Led development for a 4-person team, assigning tasks, reviewing team members' work, and directing key technical decisions within an Agile fellowship structured around Scrum routines, sprint cycles, and Git/GitHub workflows.",
     ],
   },
   {
@@ -44,8 +61,9 @@ export default function ExperiencePage() {
 
       <p className="mb-6 font-sans text-[14px] leading-relaxed text-primary">
         Full-stack developer and CS junior at Queens College, CUNY — building
-        full-stack products and real-time systems, most recently as an intern on the
-        Wall Street Journal Web Brand team.
+        full-stack products and real-time systems, most recently as a Software
+        Engineer Intern at Crcle, an AI startup, after previously interning on the
+        Wall Street Journal Web Brand team at Dow Jones.
       </p>
 
       <div className="mb-6 border-l-2 border-border-light pl-3.5">
@@ -59,13 +77,15 @@ export default function ExperiencePage() {
           <div className="font-sans text-[15px] font-semibold text-heading">{job.company}</div>
           <div className="font-sans text-[13px] text-primary">{job.role}</div>
           <div className="my-1.5 text-[11.5px] text-type">{job.meta}</div>
-          <ul className="list-disc space-y-1.5 pl-[18px]">
-            {job.points.map((point, i) => (
-              <li key={i} className="font-sans text-[13px] leading-relaxed text-muted">
-                {point}
-              </li>
-            ))}
-          </ul>
+          {job.points.length > 0 && (
+            <ul className="list-disc space-y-1.5 pl-[18px]">
+              {job.points.map((point, i) => (
+                <li key={i} className="font-sans text-[13px] leading-relaxed text-muted">
+                  {point}
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       ))}
     </div>

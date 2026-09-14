@@ -7,7 +7,7 @@ export default function ResumePage() {
         <p className="text-xs text-comment">{"// resume.pdf"}</p>
         <a
           href="/resume.pdf"
-          download="Daniel-Fernandez-Resume.pdf"
+          download="DanielFernandezResume.pdf"
           className="flex items-center gap-1.5 rounded border border-border-light px-2.5 py-1.5 text-xs text-primary hover:bg-tabs"
         >
           <Download size={13} /> download
