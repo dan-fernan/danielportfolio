@@ -19,10 +19,10 @@ const EXPERIENCE = [
     role: "Software Engineer Intern — Wall Street Journal Web Brand",
     meta: "Jun 2026 – Aug 2026 · New York, NY",
     points: [
-      "Led a cross-functional intern team to build an AI-powered testing harness — packaged as a Claude Skill — that maps cross-repo code dependencies and auto-generates Jest unit tests and Playwright e2e tests informed by Jira context.",
-      "Patched a structural rendering issue within a shared component library, resolving a bug that injected duplicate HTML tags and ensuring correct semantic and SEO baseline compliance across 3 site sections.",
-      "Root-caused a rendering bug in a WSJ content module, tracing missing props in Next.js SSR data-fetching to broken visual output and broken hyperlink behavior, and documented findings for senior engineering handoff.",
-      "Merged production code to dynamically swap news buckets on the WSJ homepage, improving content delivery for 4.1M+ subscribers.",
+      "Built an AI testing harness using dependency graphs to evaluate PR blast radiuses, automatically authoring Jest unit tests for modified components and executing targeted Playwright E2E runs via MCP on affected routes to prevent visual regressions.",
+      "Diagnosed a visual and behavioral regression in a core WSJ module caused by missing props in Next.js SSR data-fetching, delivering a working code fix and technical RFC for senior engineering integration into platform infrastructure.",
+      "Resolved an SEO compliance defect across 3 site sections serving 4.1M+ subscribers by fixing a shared component library bug that injected duplicate h1 tags into the semantic DOM hierarchy.",
+      "Delivered time-sensitive homepage and news bucket configuration changes on WSJ's production site, partnering with product to turn around layout updates on tight deadlines.",
     ],
   },
   {
@@ -31,16 +31,16 @@ const EXPERIENCE = [
     meta: "Jul 2025 – Jun 2026 · New York, NY",
     points: [
       <>
-        Designed the relational data model and Figma wireframes for{" "}
+        Architected the PostgreSQL database for{" "}
         <Link href="/projects/maps" className="text-fn hover:underline">
           M.A.P.S.
         </Link>
-        , a full-stack academic planning platform (React, Node.js, Express,
-        PostgreSQL) built to scale for 2,000+ Queens College undergraduates,
-        centralizing course mapping, professor metrics, and schedule creation.
+        , a full-stack academic planning platform built for 2,000+ students,
+        writing complex SQL joins and transactions to structure how course
+        schedules and professor metrics were stored and accessed.
       </>,
-      "Built a Puppeteer-based scraping pipeline to source real-time course data and implemented 10+ REST API endpoints — including database transactions and fallback logic — alongside Firebase Authentication and core React frontend pages.",
-      "Led development for a 4-person team, assigning tasks, reviewing team members' work, and directing key technical decisions within an Agile fellowship structured around Scrum routines, sprint cycles, and Git/GitHub workflows.",
+      "Unblocked full-stack development for the 4-person team by engineering a Puppeteer scraping pipeline to ingest real-time course catalogs, exposing the data via 10+ Express REST API endpoints secured with Firebase Authentication.",
+      "Directed the technical execution of the platform (React, Node.js), leading critical architectural decisions for data modification workflows and conducting code reviews to ensure scalable delivery of the core application.",
     ],
   },
   {
